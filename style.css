@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ddd; /* Add border to the container */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+  color: #555;
+}
+
+p {
+  text-align: center;
+  color: #777;
+}
+
+.checkbox-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.multi-select-checkbox {
+  margin-right: 5px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.counter-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
