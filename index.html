@@ -11,182 +11,208 @@
 <body>
   <h1>Communication Styles: A Self-Assessment Exercise</h1>
   <h3>(Based on the work of P Case “Teaching for the Cross-Cultural Mind” Washington, DC, SIETAR, 1981)</h3>
-  <p>Instructions: Please <font color="red"><b>select from each pair of attributes the one which is most typical of your personality. </b></font> No pair is an either-or proposal. Make your choice as spontaneously as possible. There is no wrong answer.</p>
+  <p>Instructions: Please <font color="red"><b>select from each pair of attributes</b></font> the one which is most typical of your personality. No pair is an either-or proposal. Make your choice as spontaneously as possible. There is no wrong answer.</p>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-  <div class="checkbox-container">
+  <div class="radio-container">
     <!-- Repeat the checkbox structure for a total of 80 checkboxes -->
     <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 1. I like action. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 2. I deal with problems in a systematic way. </label></div><br>
-    
-      <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 3. I believe that teams are more effective than individuals. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 4. I enjoy innovation very much. </label>
-      </div><br>
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question1" onchange="updateCounter()"> 1. I like action.
+      </label><br>
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question1" onchange="updateCounter()"> 2. I deal with problems in a systematic way.
+      </label>
+    </div>
+<br>
     
     <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 5. I am more interested in the future than in the past. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 6. I enjoy working with people. </label>
-      </div><br>
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question2" onchange="updateCounter()"> 3. I believe that teams are more effective than individuals.
+      </label><br>
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question2" onchange="updateCounter()"> 4. I enjoy innovation very much.
+      </label>
+    </div><br>
 
-        <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 7. I like to attend well-organized group meetings. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 8. Deadlines are important for me. </label></div><br>
+    <div class="container">
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question3" onchange="updateCounter()"> 5. I am more interested in the future than in the past.
+      </label><br>
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question3" onchange="updateCounter()"> 6. I enjoy working with people.
+      </label>
+    </div><br>
 
-  <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 9. I cannot stand procrastination.</label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 10. I believe that new ideas have to be tested before being used. </label></div><br>
+    <div class="container">
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question4" onchange="updateCounter()"> 7. I like to attend well-organized group meetings.
+      </label><br>
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question4" onchange="updateCounter()"> 8. Deadlines are important for me.
+      </label>
+    </div><br>
 
-  <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 11. I enjoy the stimulation of interaction with others. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 12. I am always looking for new possibilities. </label></div><br>
+    <div class="container">
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question5" onchange="updateCounter()"> 9. I cannot stand procrastination.
+      </label><br>
+      <label>
+        <input type="radio" class="multi-select-checkbox" name="question5" onchange="updateCounter()"> 10. I believe that new ideas have to be tested before being used.
+      </label>
+    </div><br>
 
-  <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 13. I want to set up my own objectives. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 14. When I start something, I go through until the end. </label></div><br>
-
-  <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 15. I basically try to understand other people’s emotions. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 16. I do challenge people around me. </label></div><br>
-
-  <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 17. I look forward to receiving feedback on my performance. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 18. I find the step-by-step approach very effective. </label></div><br>
-
-  <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 19. I think I am good at reading people. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 20. I like creative problem solving. </label></div><br>
-
-  <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 21. I extrapolate and project all the time. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 22. I am sensitive to others’ needs. </label></div><br>
-
-  <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 23. Planning is the key to success. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 24. I become impatient with long deliberations. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 25. I am cool under pressure. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 26. I value experience very much. </label></div><br>
+    <label>
+      <input type="radio" class="multi-select-checkbox" name="question6" onchange="updateCounter()"> 11. I enjoy the stimulation of interaction with others. </label><br>
+    <label>
+      <input type="radio" class="multi-select-checkbox" name="question6" onchange="updateCounter()"> 12. I am always looking for new possibilities. </label>
+  </div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 27. I listen to people. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 28. People say that I am a fast thinker. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question7" onchange="updateCounter()"> 13. I want to set up my own objectives. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question7" onchange="updateCounter()"> 14. When I start something, I go through until the end. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 29. Cooperation is a key word for me. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 30. I use logical methods to test alternatives. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question8" onchange="updateCounter()"> 15. I basically try to understand other people’s emotions. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question8" onchange="updateCounter()"> 16. I do challenge people around me. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 31. I like to handle several projects at the same time. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 32. I always question myself. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question9" onchange="updateCounter()"> 17. I look forward to receiving feedback on my performance. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question9" onchange="updateCounter()"> 18. I find the step-by-step approach very effective. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 33. I learn by doing. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 34. I believe that my head rules my heart. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question10" onchange="updateCounter()"> 19. I think I am good at reading people. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question10" onchange="updateCounter()"> 20. I like creative problem solving. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 35. I can predict how others may react to a certain action.</label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 36. I do not like details. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question11" onchange="updateCounter()"> 21. I extrapolate and project all the time. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question11" onchange="updateCounter()"> 22. I am sensitive to others’ needs. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 37. Analysis should always precede action. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 38. I am able to assess the climate of a group. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question12" onchange="updateCounter()"> 23. Planning is the key to success. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question12" onchange="updateCounter()"> 24. I become impatient with long deliberations. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 39. I have a tendency to start things and not finish them up. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 40. I perceive myself as decisive. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question13" onchange="updateCounter()"> 25. I am cool under pressure. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question13" onchange="updateCounter()"> 26. I value experience very much. </label></div><br>
+
+  <div class="container">
+    <label><input type="radio" class="multi-select-checkbox" name="question14" onchange="updateCounter()"> 27. I listen to people. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question14" onchange="updateCounter()"> 28. People say that I am a fast thinker. </label></div><br>
+
+  <div class="container">
+    <label><input type="radio" class="multi-select-checkbox" name="question15" onchange="updateCounter()"> 29. Cooperation is a key word for me. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question15" onchange="updateCounter()"> 30. I use logical methods to test alternatives. </label></div><br>
+
+  <div class="container">
+    <label><input type="radio" class="multi-select-checkbox" name="question16" onchange="updateCounter()"> 31. I like to handle several projects at the same time. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question16" onchange="updateCounter()"> 32. I always question myself. </label></div><br>
+
+  <div class="container">
+    <label><input type="radio" class="multi-select-checkbox" name="question17" onchange="updateCounter()"> 33. I learn by doing. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question17" onchange="updateCounter()"> 34. I believe that my head rules my heart. </label></div><br>
+
+  <div class="container">
+    <label><input type="radio" class="multi-select-checkbox" name="question18" onchange="updateCounter()"> 35. I can predict how others may react to a certain action.</label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question18" onchange="updateCounter()"> 36. I do not like details. </label></div><br>
+
+  <div class="container">
+    <label><input type="radio" class="multi-select-checkbox" name="question19" onchange="updateCounter()"> 37. Analysis should always precede action. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question19" onchange="updateCounter()"> 38. I am able to assess the climate of a group. </label></div><br>
+
+  <div class="container">
+    <label><input type="radio" class="multi-select-checkbox" name="question20" onchange="updateCounter()"> 39. I have a tendency to start things and not finish them up. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question20" onchange="updateCounter()"> 40. I perceive myself as decisive. </label></div><br>
 
     
     <!-- ... Repeat for Buttons 3 to 80 ... -->
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 41. I search for challenging tasks. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 42. I rely on observation and data. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question21" onchange="updateCounter()"> 41. I search for challenging tasks. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question21" onchange="updateCounter()"> 42. I rely on observation and data. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 43. I can express my feelings openly.  </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 44. I like to design new projects. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question22" onchange="updateCounter()"> 43. I can express my feelings openly.  </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question22" onchange="updateCounter()"> 44. I like to design new projects. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 45. I enjoy reading very much. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 46. I perceive myself as a facilitator. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question23" onchange="updateCounter()"> 45. I enjoy reading very much. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question23" onchange="updateCounter()"> 46. I perceive myself as a facilitator. </label></div><br>
 
     <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 47. I like to focus on one issue at a time. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 48. I like to achieve. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question24" onchange="updateCounter()"> 47. I like to focus on one issue at a time. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question24" onchange="updateCounter()"> 48. I like to achieve. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 49. I enjoy learning about others. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 50. I like variety. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question25" onchange="updateCounter()"> 49. I enjoy learning about others. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question25" onchange="updateCounter()"> 50. I like variety. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 51. Facts speak for themselves. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 52. I use my imagination as much as possible. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question26" onchange="updateCounter()"> 51. Facts speak for themselves. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question26" onchange="updateCounter()"> 52. I use my imagination as much as possible. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 53. I am impatient with long, slow assignments. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 54. My mind never stops working. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question27" onchange="updateCounter()"> 53. I am impatient with long, slow assignments. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question27" onchange="updateCounter()"> 54. My mind never stops working. </label></div><br>
 
     <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 55. Key decisions have to be made in a cautious way. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 56. I strongly believe that people need each other to get work done. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question28" onchange="updateCounter()"> 55. Key decisions have to be made in a cautious way. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question28" onchange="updateCounter()"> 56. I strongly believe that people need each other to get work done. </label></div><br>
 
       <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 57. I usually make decisions without thinking too much. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 58. Emotions create problems. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question29" onchange="updateCounter()"> 57. I usually make decisions without thinking too much. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question29" onchange="updateCounter()"> 58. Emotions create problems. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 59. I like to be liked by others. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 60. I can put two and two together very quickly. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question30" onchange="updateCounter()"> 59. I like to be liked by others. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question30" onchange="updateCounter()"> 60. I can put two and two together very quickly. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 61. I try out my new ideas on people.
+    <label><input type="radio" class="multi-select-checkbox" name="question31" onchange="updateCounter()"> 61. I try out my new ideas on people.
  </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 62. I believe in the scientific approach. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question31" onchange="updateCounter()"> 62. I believe in the scientific approach. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 63. I like to get things done. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 64. Good relationships are essential. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question32" onchange="updateCounter()"> 63. I like to get things done. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question32" onchange="updateCounter()"> 64. Good relationships are essential. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 65. I am impulsive. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 66. I accept differences in people. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question33" onchange="updateCounter()"> 65. I am impulsive. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question33" onchange="updateCounter()"> 66. I accept differences in people. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 67. Communicating with people is an end in itself. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 68. I like to be intellectually stimulated. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question34" onchange="updateCounter()"> 67. Communicating with people is an end in itself. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question34" onchange="updateCounter()"> 68. I like to be intellectually stimulated. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 69. I like to organize. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 70. I usually jump from one task to another. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question35" onchange="updateCounter()"> 69. I like to organize. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question35" onchange="updateCounter()"> 70. I usually jump from one task to another. </label></div><br>
 
     <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 71. Talking and working with people is a creative art. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 72. Self-actualization is a key word for me. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question36" onchange="updateCounter()"> 71. Talking and working with people is a creative art. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question36" onchange="updateCounter()"> 72. Self-actualization is a key word for me. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 73. I enjoy playing with ideas. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 74. I dislike wasting my time. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question37" onchange="updateCounter()"> 73. I enjoy playing with ideas. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question37" onchange="updateCounter()"> 74. I dislike wasting my time. </label></div><br>
 
     <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 75. I enjoy doing what I am good at. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 76. I learn by interacting with others. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question38" onchange="updateCounter()"> 75. I enjoy doing what I am good at. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question38" onchange="updateCounter()"> 76. I learn by interacting with others. </label></div><br>
 
       <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 77. I find abstractions interesting and enjoyable. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 78. I am patient with details. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question39" onchange="updateCounter()"> 77. I find abstractions interesting and enjoyable. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question39" onchange="updateCounter()"> 78. I am patient with details. </label></div><br>
 
   <div class="container">
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 79. I like brief, to the point statements. </label><br>
-    <label><input type="checkbox" class="multi-select-checkbox" onchange="updateCounter()"> 80. I feel confident in myself. </label></div><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question40" onchange="updateCounter()"> 79. I like brief, to the point statements. </label><br>
+    <label><input type="radio" class="multi-select-checkbox" name="question40" onchange="updateCounter()"> 80. I feel confident in myself. </label></div><br>
   </div>
 
   <center><h4>Click Button & Scroll Below</h4></center>
   <center><button onclick="updateAndReveal()">Get Results</button></center>
-
-  <center><h4>Your Results: </h4></center>
   <div class="counter-container" id="counterContainer" style="display: none;">
     <p>Style 1: <span id="styleOne">0</span></p>
     <p>Style 2: <span id="styleTwo">0</span></p>
@@ -211,9 +237,6 @@
     <td><b>PEOPLE (PE)</b><br>Communication<br>Relationships<br>Teamwork<br></td>
   </tr>
   </table>
-
-  <center><img src="first.png" alt="firstPhoto" width="400" height="500">
-  <img src="second.png" alt="secondPhoto" width="400" height="500"></center>
   
   <script src="script.js"></script>
 </body>
